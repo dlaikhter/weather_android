@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+
+    android:padding="6dip">
+    <!-- time text -->
+   <TextView
+		android:id="@+id/timetext"
+
+		android:layout_width="wrap_content"
+		android:layout_height="20dip"
+
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+
+		android:textStyle="bold"
+		android:singleLine="true"
+		android:ellipsize="marquee"
+   />
+
+       <!-- Time text data -->
+   <TextView
+		android:id="@+id/timetextdata"
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@id/timetext"
+
+		android:singleLine="true"
+		android:ellipsize="marquee"
+   />
+
+   <!-- condition text -->
+   <TextView
+	 	android:id="@+id/conditiontext"
+
+	 	android:layout_width="wrap_content"
+	 	android:layout_height="20dip"
+
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/timetext"
+
+	 	android:textStyle="bold"
+	 	android:gravity="center_vertical"
+   	/>
+
+   	       <!-- condition text data -->
+   <TextView
+		android:id="@+id/conditiontextdata"
+
+		android:layout_width="fill_parent"
+		android:layout_height="20dip"
+
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/timetext"
+		android:layout_toRightOf="@id/conditiontext"
+
+		android:gravity="center_vertical"
+   />
+
+   	<!-- temp text -->
+   <TextView
+       	android:id="@+id/temptext"
+       
+		android:layout_width="wrap_content"
+	 	android:layout_height="20dip"
+
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/conditiontext"
+
+		android:textStyle="bold"
+		android:gravity="center_vertical"
+   />
+   <!-- temp text data -->
+      <TextView
+		android:layout_width="fill_parent"
+		android:layout_height="20dip"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/conditiontext"
+		android:layout_toRightOf="@id/temptext"
+
+		android:id="@+id/temptextdata"
+		android:gravity="center_vertical"
+   />
+     <!-- humidity text -->
+     <TextView
+        android:layout_width="wrap_content"
+	 	android:layout_height="20dip"
+	 	
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/temptext"
+
+		android:textStyle="bold"
+		android:id="@+id/humiditytext"
+		android:gravity="center_vertical"
+   />
+   <!-- This is the actual description -->
+      <TextView
+		android:layout_width="fill_parent"
+		android:layout_height="20dip"
+
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/temptext"
+		android:layout_toRightOf="@id/humiditytext"
+
+		android:id="@+id/humiditytextdata"
+		android:gravity="center_vertical"
+   />
+      
+    	<ImageView
+    	android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_below="@id/humiditytext"
+
+		android:id="@+id/icon"
+		/>
+</RelativeLayout>
